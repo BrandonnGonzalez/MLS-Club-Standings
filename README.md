@@ -21,7 +21,7 @@ The MLS Community Board is an interactive web application that displays all 30 M
 
 ## 🚀 Live Demo
 
-[View Live Application](https://your-deployment-url.com) *(Replace with your actual deployment URL)*
+[View Live Application]https://mlsclubstandings.netlify.app/
 
 ## 🛠️ Tech Stack
 
