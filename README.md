@@ -1,8 +1,8 @@
-# MLS Community Board 🏆
+# MLS Standings Board 🏆
 
 A modern, responsive web application showcasing all Major League Soccer (MLS) teams with their official logos, locations, and conference standings. Built with React and featuring a sleek card-based design.
 
-![MLS Community Board](https://img.shields.io/badge/MLS-Community%20Board-green?style=for-the-badge&logo=react)
+![MLS Standings Board](https://img.shields.io/badge/MLS-Community%20Board-green?style=for-the-badge&logo=react)
 
 ## 🌟 Overview
 
