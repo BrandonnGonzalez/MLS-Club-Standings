@@ -151,13 +151,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Vite** for the fast build tool
 - **CodePath** for project inspiration and guidance
 
-## 📞 Contact
-
 **Developer**: Brandon Gonzalez  
-**Project Link**: [https://github.com/yourusername/mls-community-board](https://github.com/yourusername/mls-community-board)
 
----
 
-⭐ **Star this repository if you found it helpful!**
-
-*Built with ❤️ for MLS fans everywhere*
