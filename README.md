@@ -133,9 +133,6 @@ The application is fully responsive and optimized for:
 - [MLS Team Standings](https://www.mlssoccer.com/standings/)
 - Team logos sourced from official MLS media resources
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 ### Development Guidelines
 1. Follow the existing code style
