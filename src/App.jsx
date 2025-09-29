@@ -1,9 +1,26 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Card from './components/Card'
 import TopFiveEasternCard from './components/TopFiveEasternCard'
 import TopFiveWesternCard from './components/TopFiveWesternCard'
+import DarkModeToggle from './components/DarkModeToggle'
 function App() {
+  // Theme state - default to light black background
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem('darkMode');
+    return savedTheme === 'true';
+  });
+
+  // Apply theme to document
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+    localStorage.setItem('darkMode', isDarkMode);
+  }, [isDarkMode]);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(prev => !prev);
+  };
+
   const easternMlsTeams = [
     { id: 1, teamName: "Atlanta United FC", teamLocation: "Atlanta, GA", teamImage: "https://images.mlssoccer.com/image/upload/t_q-best/v1747499879/assets/logos/mls-clubs/Club_Logo-Atlanta_jtk7ku.png" },
     { id: 2, teamName: "Charlotte FC", teamLocation: "Charlotte, NC", teamImage: "https://images.mlssoccer.com/image/upload/t_q-best/v1747500045/assets/logos/mls-clubs/Club_Logo-Charlotte_p7sznf.png" },
@@ -42,6 +59,7 @@ function App() {
 
   return (
     <div className="App">
+      <DarkModeToggle isDark={isDarkMode} onToggle={toggleDarkMode} />
       <h1>MLS Competitors</h1>
         <a 
           href="https://www.mlssoccer.com/standings/#season=MLS-SEA-0001K9&live=false" 

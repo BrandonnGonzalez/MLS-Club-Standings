@@ -14,6 +14,24 @@
   color: #e7e2e2;
 }
 
+/* Theme-specific styles for h1 */
+[data-theme="light"] .App h1 {
+  color: #000000; /* Black text in light mode */
+}
+
+[data-theme="dark"] .App h1 {
+  color: #e7e2e2; /* Light gray text in dark mode */
+}
+
+/* Theme-specific styles for h2 elements */
+[data-theme="light"] .App h2 {
+  color: #000000; /* Black text in light mode */
+}
+
+[data-theme="dark"] .App h2 {
+  color: #e7e2e2; /* Light gray text in dark mode */
+}
+
 .cards-container, .eastern-cards-container, .western-cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
